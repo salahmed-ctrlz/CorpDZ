@@ -1,9 +1,4 @@
-# 🏢 CORP.DZ — Enterprise Infrastructure Home Lab
-
-![Project Status](https://img.shields.io/badge/Status-Completed-success?style=for-the-badge\&logo=github)
-![Environment](https://img.shields.io/badge/Type-Home_Lab-blue?style=for-the-badge)
-![Role](https://img.shields.io/badge/Role-SysAdmin_%2F_Network_Engineer-orange?style=for-the-badge)
-![Platform](https://img.shields.io/badge/Platform-Oracle_VirtualBox-green?style=for-the-badge)
+# 🏢 CORP.DZ - Enterprise Infrastructure Home Lab
 
 > **A hybrid enterprise network simulation that replicates SMB infrastructure.** This lab demonstrates on‑premise integration of Windows Active Directory and Linux services, identity management, automation, defensive auditing, and basic offensive testing.
 
@@ -43,7 +38,7 @@
 
 ## 👨‍💻 Author & Links
 
-**Salah Eddine Medkour** — Junior Network Engineer | Master’s in Networks & Telecommunications
+**Salah Eddine Medkour** - Junior Network Engineer | Technical Lab Instructor @ Badji Mokhtar University | Master’s in Networks & Telecommunications
 
 * Portfolio: [https://salahmed-ctrlz.github.io/salaheddine-medkour-portfolio/](https://salahmed-ctrlz.github.io/salaheddine-medkour-portfolio/)
 * LinkedIn: [https://www.linkedin.com/in/salah-eddine-medkour/](https://www.linkedin.com/in/salah-eddine-medkour/)
@@ -64,12 +59,12 @@ Host runs Oracle VirtualBox with multiple VMs connected to internal virtual netw
 
 ### VM Inventory
 
-| Hostname      |                                       Role | OS                         | IP / Network          |
-| ------------- | -----------------------------------------: | -------------------------- | --------------------- |
+| Hostname      | Role                                       | OS                         | IP / Network          |
+| ------------- | ------------------------------------------ | -------------------------- | --------------------- |
 | CorpDZ-DC     | Domain Controller (AD/DNS/DHCP/FileServer) | Windows Server 2022        | Static `192.168.10.2` |
-| CorpDZ-Client |                                Workstation | Windows 10 Enterprise LTSC | DHCP (.100-.200)      |
-| CorpDZ-Web    |                        Intranet Web Server | Ubuntu Server 24.04        | Static `192.168.10.5` |
-| Kali-Audit    |                          Security Audit VM | Kali Linux Rolling         | DHCP                  |
+| CorpDZ-Client | Workstation                                | Windows 10 Enterprise LTSC | DHCP (.100-.200)      |
+| CorpDZ-Web    | Intranet Web Server                        | Ubuntu Server 24.04        | Static `192.168.10.5` |
+| Kali-Audit    | Security Audit VM                          | Kali Linux Rolling         | DHCP                  |
 
 ---
 
@@ -78,11 +73,11 @@ Host runs Oracle VirtualBox with multiple VMs connected to internal virtual netw
 Single internal network used for Lab 1:
 
 ```
-Corp.DZ Internal Network — 192.168.10.0/24
-  - CorpDZ-DC (192.168.10.2) — AD, DNS, DHCP, File Share
-  - CorpDZ-Web (192.168.10.5) — Nginx intranet
-  - CorpDZ-Client — Domain member, receives DHCP
-  - Kali-Audit — Recon & scans
+Corp.DZ Internal Network - 192.168.10.0/24
+  - CorpDZ-DC (192.168.10.2) - AD, DNS, DHCP, File Share
+  - CorpDZ-Web (192.168.10.5) - Nginx intranet
+  - CorpDZ-Client - Domain member, receives DHCP
+  - Kali-Audit - Recon & scans
 ```
 
 (For Lab 2, the topology will be segmented with multiple subnets and routing.)
@@ -122,7 +117,7 @@ Corp.DZ Internal Network — 192.168.10.0/24
 
 ## 🧰 Tools & Utilities
 
-* Custom: **99SAK — PowerShell Swiss Army Knife** (admin helpers and triage scripts) — [https://github.com/salahmed-ctrlz/99SAK-PowershellSwissArmyKnife](https://github.com/salahmed-ctrlz/99SAK-PowershellSwissArmyKnife)
+* Custom: **99SAK - PowerShell Swiss Army Knife** (admin helpers and triage scripts) - [https://github.com/salahmed-ctrlz/99SAK-PowershellSwissArmyKnife](https://github.com/salahmed-ctrlz/99SAK-PowershellSwissArmyKnife)
 * RSAT (Remote Server Administration Tools)
 * PuTTY / OpenSSH for Linux administration
 * Nmap / Netdiscover for network discovery and audit
@@ -176,14 +171,14 @@ ForEach ($User in $Users) {
   * DNS resolution from client to `www.corp.dz` (HTTP success)
   * Account lockout simulation & verification
   * ACL enforcement on sensitive share (Salaries folder)
-  * Silent MSI deployment test via GPO — validated on machine boot
+  * Silent MSI deployment test via GPO - validated on machine boot
   * Reconnaissance scan from Kali to verify expected open services
 
 * **Deliverables:**
 
   * Technical diary (ticket log)
   * PowerShell automation scripts
-  * Screenshots and evidence (available in portfolio)
+  * Screenshots and evidence (available in portfolio soon)
 
 ---
 
@@ -196,5 +191,3 @@ This lab is a home‑lab simulation for educational and portfolio use. Exercise 
 © 2026 Salah Eddine Medkour
 
 ---
-
-*Ready for Lab 2 (Network segmentation & routing).*

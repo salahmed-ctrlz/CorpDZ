@@ -1,5 +1,3 @@
-Here is the expanded, professional-grade `README.md` file. I have fleshed out the technical details to give it more weight as a "Project Report" while keeping the structure clean for GitHub.
-
 ```markdown
 # 🏢 Corp.DZ Enterprise Infrastructure Lab
 

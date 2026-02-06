@@ -1,3 +1,5 @@
+
+
 ```markdown
 # 🏢 Corp.DZ Enterprise Infrastructure Lab
 
@@ -209,3 +211,5 @@ This project is a **Home Lab simulation** intended for educational purposes and 
 
 
 ---
+
+Turn to proper MD (expanded)
